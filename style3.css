@@ -1,0 +1,134 @@
+:root {
+    --theme-red: #ef3724;
+    --theme-blue: #2960f7;
+    --theme-green: #8cc63f;
+    --theme-orange: #fd7e14;
+    --theme-purple: #6f42c1;
+}
+
+/* Medium */
+@font-face {
+    font-family: 'Quicksand';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Quicksand Medium'), local('Quicksand-Medium'), url(https://fonts.gstatic.com/s/quicksand/v8/6xKodSZaM9iE8KbpRA_p2HcYT8L_.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* 
+    Basic
+*/
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+}
+
+.fw-normal {
+    font-weight: 400;
+}
+
+.fw-light {
+    font-weight: 300;
+}
+
+a:hover, a:active {
+    color: #2184f5;
+}
+
+/* Image Responsive */
+.img-place {
+    position: relative;
+    display: block;
+    margin: 0 auto;
+    width: 100%;height: 100%;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.img-place > img {
+    width: 100%;height: auto;
+}
+
+
+/* 
+    Color Scheme
+*/
+
+.fg-theme-red {
+    color: #ef3724 !important;
+}
+
+.fg-theme-blue {
+    color: #2960f7 !important;
+}
+
+/* 
+    Progressbar
+*/
+.progress-wrapper {
+    display: block;
+    margin: 10px 0;
+}
+
+.progress-wrapper .caption {
+    font-weight: 500;
+}
+
+.progress {
+    margin-top: 5px;
+    height: 1.25rem;
+    border: 2px solid #fff;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px #747474;
+}
+
+.progress,
+.progress-bar {
+    border-radius: 30px;
+}
+
+.progress-bar {
+    font-size: 12px;
+    background-color: #747474;
+}
+
+/*
+ *  Navigation 
+ */
+.sticky {
+    top: 0;
+    z-index: 999;
+}
+
+.navbar-brand {
+    font-weight: 500;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.navbar-nav .nav-link {
+    padding: 14px 10px;
+}
+
+
+/* Theme red */
+.theme-red .bg-theme {
+    background-color: #EF3724 !important;
+}
+
+.theme-red .fg-theme {
+    color: #EF3724 !important;
+}
+
+.theme-red .progress {
+    box-shadow: 0 0 0 2px #EF3724;
+}
+
+.theme-red .progress-bar {
+    background-color: #EF3724;
+}
+
+.theme-red .theme-list li::before {
+    border-color: #EF3724;
+}
